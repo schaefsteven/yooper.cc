@@ -4,7 +4,7 @@
 // 2. Include any default variable overrides here
 $body-color-dark: #FFF;
 
-$primary: blue;
+$primary: #B2631D;
 $secondary: orange;
 
 $code-color: #48E91D;
@@ -81,6 +81,44 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
 @import '../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
 
 // Custom Fonts
+
+
+
+.weatherwidget-io {
+    height: 98px;
+    width: 900px;
+    max-wdith: 100%;
+}
+
+.search-bar {
+    margin: 1rem;
+    padding: 12px 48px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    border: 3px solid white;
+    border-radius: 5rem;
+    color: white;
+    width: 600px;
+    max-width: 100%;
+}
+
+.favorites {
+    ul {
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    li {
+        padding: 1rem;
+    }
+    a {
+        text-decoration: none;
+    }
+}
+
+
+
 
 // start template styles ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -1,5 +1,5 @@
-title = "Hugo-BS Temp"
-baseURL = ""
+title = "yooper.cc"
+baseURL = "https://yooper.cc"
 
 [params]
 primEmail = "info@example.com"

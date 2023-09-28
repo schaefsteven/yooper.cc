@@ -1,16 +1,43 @@
 {{ define "main" }}
     {{"<!-- layouts/home.html -->" | safeHTML }}
     <section class="prim-sec">
-        <div class="prim-cont">
-            <h1>Welcome to your new Hugo Site!</h1>
-            {{ range .Site.Sections }}
-                <h2>{{ .Title }}</h2>
+        <div class="prim-cont d-flex flex-column align-items-center">
+            <h1 class="mb-5">Greetings</h1>
+            <a 
+                class="weatherwidget-io mb-4" 
+                href="https://forecast7.com/en/36d97n86d48/bowling-green/?unit=us" 
+                data-label_1="BOWLING GREEN" 
+                data-label_2="WEATHER" 
+                data-font="Courier New" 
+                data-icons="Climacons Animated" 
+                data-days="5" 
+                data-theme="weather_one"
+            >
+                BOWLING GREEN WEATHER
+            </a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+            </script>
+            <form 
+                action="https://www.google.com/search" 
+                class="searchform" 
+                method="get" 
+                name="searchform"
+            >
+                <input 
+                    class="search-bar"
+                    autocomplete="on" 
+                    name="q" 
+                    placeholder="Lookin' to search google, ey?" 
+                    required="required"  
+                    type="text"
+                >
+            </form>
+            <section class="favorites">
                 <ul>
-                    {{ range .Pages }}
-                    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-                    {{ end }}
+                    <li><a href="https://github.com/schaefsteven?tab=repositories">Github</a></li>
+                    <li><a href="https://app.netlify.com/teams/schaefsteven/overview">Netlify</a></li>
                 </ul>
-            {{ end }}
+            </section>
         </div>
     </section>
     <script src="/js/invite-redirect.js"></script>
