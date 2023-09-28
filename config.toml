@@ -1,0 +1,39 @@
+title = "Hugo-BS Temp"
+baseURL = ""
+
+[params]
+primEmail = "info@example.com"
+primPhone = "(212) 345-6789"
+firstName = "John"
+lastName = "Smith"
+
+[markup]
+
+[markup.goldmark]
+
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+style = "modus-vivendi"
+
+[module]
+
+[[module.mounts]]
+source = "static"
+target = "static"
+
+[[module.mounts]]
+source = "node_modules"
+target = "static/node_modules"
+
+[[module.mounts]]
+source = "favicon"
+target = "static"
+
+[build]
+writeStats = true
+

@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<!-- Title and Description -->
+<title>{{ if not .IsHome }}{{ .Page.Title }} - {{ end }}{{ .Site.Title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ with .Summary }}{{ . }}{{ else }}{{ .Site.Title }}: {{ .Title }}{{ end }}">
+
+<!-- Google tag (gtag.js) -->
+
+<!-- Favicon -->
+
+<!-- OG image -->
+{{ with resources.GetMatch "images/og-img*" }}
+    <meta property="og:image" content="{{ .Permalink }}">
+{{ end }}
+
+<!-- JS -->
+<script defer src="/js/bs.js" type="module"></script>
+<script defer src="/js/main.js"></script>
+
+<!-- Style -->
+{{ $sass := resources.Get "scss/styles.scss" }}
+{{ $toCssOpt := (dict "includePaths" "node_modules" "targetPath" "/assets/css/styles.css") }}
+{{ $postCssOpt := (dict "use" "autoprefixer") }}
+{{ $style := $sass | toCSS $toCssOpt | postCSS $postCssOpt }}
+{{ if hugo.IsProduction }}
+    {{ $style = $style | postCSS | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+<link href="{{ $style.RelPermalink }}" rel="stylesheet">
