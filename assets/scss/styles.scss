@@ -4,7 +4,7 @@
 // 2. Include any default variable overrides here
 $body-color-dark: #FFF;
 
-$primary: #B2631D;
+$primary: #9D4A00;
 $secondary: orange;
 
 $code-color: #48E91D;
@@ -102,12 +102,15 @@ body {
         margin-right: auto;
         margin-top: 2rem;
         filter: drop-shadow(10px 10px 2px black);
+        height: 1056px;
+        border-bottom: solid color-mix(in srgb, red 10%, transparent) 24px;
     }
     @media print {
         margin: 0px;
+        height: 1032px;
+        overflow: hidden;
     }
     width: 816px;
-    height: 1032px;
     background-color: white;
     color: black;
     padding: 50px;
@@ -137,6 +140,10 @@ body {
     a {
         text-decoration: none;
         color: $primary;
+    }
+    .bi {
+        position: relative;
+        top: 1.2px;
     }
     $lcpadding: 0.6rem;
     .left-column {

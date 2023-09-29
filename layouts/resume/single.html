@@ -13,7 +13,7 @@
                 <h2>Work Experience</h2>
                 <ul class="work-experience">
                     {{ range .Params.experience }}
-                        <li class="mb-3">
+                        <li class="mb-1">
                             <h3>
                                 <span class="fw-bold">{{ .title }}</span> 
                                 <span class="company"> at {{ .company }}</span>
@@ -28,15 +28,22 @@
                 <h2>Contact</h2>
                 <ul class="contact-list double-spaced">
                     <li>
-                        <a href="tel:{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}">
-                            {{ .Site.Params.primPhone }}
+                        <a href="tel:{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}" target="_blank">
+                            <i class="pe-2 bi bi-telephone-fill"></i>{{ .Site.Params.primPhone }}
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:{{ .Site.Params.primEmail }}">
-                            {{ .Site.Params.primEmail }}
+                        <a href="mailto:{{ .Site.Params.primEmail }}" target="_blank">
+                            <i class="pe-2 bi bi-envelope-fill"></i>{{ .Site.Params.primEmail }}
                         </a>
                     </li>
+                    {{ range .Params.links }}
+                        <li>
+                            <a href="{{ .link }}" target="_blank">
+                                <i class="pe-2 bi bi-{{ .icon }}"></i>{{ .display }}
+                            </a>
+                        </li>
+                    {{ end }}
                 </ul>
                 <h2>Skills</h2>
                 <ul class="double-spaced">
