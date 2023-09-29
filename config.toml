@@ -2,8 +2,8 @@ title = "yooper.cc"
 baseURL = "https://yooper.cc"
 
 [params]
-primEmail = "info@example.com"
-primPhone = "(212) 345-6789"
+primEmail = "steven@ssweb.services"
+primPhone = "(906) 291-0614"
 firstName = "John"
 lastName = "Smith"
 
@@ -36,4 +36,3 @@ target = "static"
 
 [build]
 writeStats = true
-

@@ -1,0 +1,54 @@
+{{ define "main" }}
+    <div class="page">
+        <div class="mb-3 pb-2 header">
+            <h1 class="mb-0">{{ .Params.name }}</h1>
+            <span class="text-primary">
+                Software Engineer
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-9 left-column">
+                <h2>Summary</h2>
+                    <p>{{ .Params.summary }}</p>
+                <h2>Work Experience</h2>
+                <ul class="work-experience">
+                    {{ range .Params.experience }}
+                        <li class="mb-3">
+                            <h3>
+                                <span class="fw-bold">{{ .title }}</span> 
+                                <span class="company"> at {{ .company }}</span>
+                            </h3>
+                            <span class="date">{{ .date }}</span>
+                            <div class="description">{{ .description | markdownify }}</div>
+                        </li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col">
+                <h2>Contact</h2>
+                <ul class="contact-list double-spaced">
+                    <li>
+                        <a href="tel:{{ replaceRE `[^\d]` `` .Site.Params.primPhone }}">
+                            {{ .Site.Params.primPhone }}
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:{{ .Site.Params.primEmail }}">
+                            {{ .Site.Params.primEmail }}
+                        </a>
+                    </li>
+                </ul>
+                <h2>Skills</h2>
+                <ul class="double-spaced">
+                    {{ range .Params.skills }}
+                        <li>{{ . }}</li>
+                    {{ end }}
+                </ul>
+                <h2>Education</h2>
+                <h3>Ferris State University</h3>
+                <span class="date mb-1">Graduated 2020</span>
+                <span>Major: Music and Entertianment Business</span>
+            </div>
+        </div>
+    </div>
+{{ end }}

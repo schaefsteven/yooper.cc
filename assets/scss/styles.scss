@@ -83,6 +83,99 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
 // Custom Fonts
 
 
+// Resume
+
+header, footer {
+    @media print {
+        display: none;
+    }
+}
+body {
+    @media print {
+        background-color: white;
+    }
+}
+
+.page {
+    @media screen {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        filter: drop-shadow(10px 10px 2px black);
+    }
+    @media print {
+        margin: 0px;
+    }
+    width: 816px;
+    height: 1032px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    padding-top: 60px;
+    font-family: arial, sans-serif;
+    font-size: 10pt;
+    h1 {
+        font-size: 18pt;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 12pt;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 11pt;
+    }
+    h4 {
+        font-size: 11pt;
+    }
+    ul {
+        list-style: none;
+        padding-left: 0px;
+    }
+    a {
+        text-decoration: none;
+        color: $primary;
+    }
+    $lcpadding: 0.6rem;
+    .left-column {
+        margin-left: -$lcpadding;
+    }
+    .left-column > *:not(.work-experience) {
+        padding-left: $lcpadding;
+    }
+    .work-experience > li {
+        padding: $lcpadding;
+        &:nth-child(odd) {
+            background-color: color-mix(in srgb, $primary 5%, transparent);
+        }
+        .company {
+            font-size: 0.8rem;
+        }
+    }
+    .header {
+        border-bottom: 2px solid color-mix(in srgb, $primary 20%, transparent);
+    }
+    .description ul {
+        list-style: outside;
+        padding-left: 1rem;
+    }
+    .double-spaced {
+        padding-top: 0.6rem;
+        margin-bottom: 2rem;
+        li {
+            margin-bottom: 0.8rem;
+        }
+    }
+    .date {
+        display: block;
+        color: $primary;
+    }
+}
+
+
+// Homepage
 
 .weatherwidget-io {
     height: 98px;
@@ -116,9 +209,6 @@ $fa-font-path: '/node_modules/@fortawesome/fontawesome-free/webfonts';
         text-decoration: none;
     }
 }
-
-
-
 
 // start template styles ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
