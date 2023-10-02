@@ -141,6 +141,12 @@ body {
         text-decoration: none;
         color: $primary;
     }
+    p {
+        margin-bottom: 0.5rem;
+    }
+    .exp-li p {
+        margin-bottom: 0.25rem;
+    }
     .bi {
         position: relative;
         top: 1.2px;
