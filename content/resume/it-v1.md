@@ -9,7 +9,7 @@ notes:
   - communication skills
   - problem-solving
   - CUSTOMER SERVICE
-summary: I am an IT professional with a deep interest in efficiency and automation. I have a passion for technology and try to make the world a better place with it using creative solutions. I pride myself on being able to work collaboratively with a team and step outside my comfort zone to understand others' points of view. My customer service experience has taught me a lot about how to patiently listen to a customer's needs and ask good questions to identify the problem before using my troubleshooting skills to meet their needs.
+summary: I am an IT professional with an extensive background in customer service. I am skilled at working collaboratively with a team to troubleshoot and find creative solutions to complex and technical problems.
 links: 
   - display: ssweb.services
     link: https://ssweb.services
