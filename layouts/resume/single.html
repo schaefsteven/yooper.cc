@@ -1,6 +1,6 @@
 {{ define "main" }}
     <div class="page">
-        <div class="mb-3 pb-2 header">
+        <div class="mb-2 pb-2 header">
             <h1 class="mb-0">{{ .Params.name }}</h1>
             <span class="text-primary">
                 {{ .Params.role }}
@@ -10,10 +10,21 @@
             <div class="col-9 left-column">
                 <h2>Summary</h2>
                     <p>{{ .Params.summary }}</p>
+                <h2>Technical Experience</h2>
+                <ul class="technical-experience experience">
+                    {{ range .Params.Technicalexperience }}
+                        <li class="mb-1 py-1 exp-li">
+                            <h3>
+                                <span class="fw-bold">{{ .title }}</span> 
+                            </h3>
+                            <div class="description">{{ .description | markdownify }}</div>
+                        </li>
+                    {{ end }}
+                </ul>
                 <h2>Work Experience</h2>
-                <ul class="work-experience">
+                <ul class="work-experience experience">
                     {{ range .Params.experience }}
-                        <li class="mb-1 py-2 exp-li">
+                        <li class="mb-1 py-1 exp-li">
                             <h3>
                                 <span class="fw-bold">{{ .title }}</span> 
                                 <span class="company"> at {{ .company }}</span>

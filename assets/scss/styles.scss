@@ -126,6 +126,7 @@ body {
         font-size: 12pt;
         text-transform: uppercase;
         font-weight: bold;
+        margin-bottom: 5px;
     }
     h3 {
         font-size: 11pt;
@@ -155,16 +156,19 @@ body {
     .left-column {
         margin-left: -$lcpadding;
     }
-    .left-column > *:not(.work-experience) {
+    .left-column > *:not(.experience) {
         padding-left: $lcpadding;
     }
-    .work-experience > li {
+    .experience > li {
         padding: $lcpadding;
         &:nth-child(odd) {
             background-color: color-mix(in srgb, $primary 5%, transparent);
         }
         .company {
             font-size: 0.8rem;
+        }
+        h3 {
+            margin-bottom: 2px;
         }
     }
     .header {

@@ -36,13 +36,23 @@ skills:
   - SCSS
   - JavaScript
 
-experience: 
+technicalExperience:
+  - title: Server Administration
+    description: I have deployed my own server on my own hardware running TrueNAS, with network-attached storage in RAID, remote access through Nextcloud, and several additional services inside of docker containers on the server. I have also configured permissions for the filesystems and services, configured ingress using Cloudflare tunnels, and set up file history/backup using zfs snapshots.
+  - title: Network Administration
+    description: I have set up and administered several networks, including configuring DHCP servers, assigning static IPs through DHCP, configuring DNS and blocking domains, etc.
+  - title: Operating Systems
+    description: I have used Windows, MacOS, and Linux (Debian and Ubuntu) in several different contexts and am familiar with using and configuring all three.
+  - title: Command line
+    description: I am comfortable in the command line (Bash, ZSH, and Powershell) using tools like ssh, vi, grep, and git, and I have experience writing scripts to automate tasks.
 
+
+experience: 
   - title: Web Developer
     company: SS Web Services
     date: Jun 2022 - Present 
     description: |
-        I work with businesses to meet their online needs by building websites, managing google listings, tracking website traffic, managing hosting and DNS, etc.
+        I work with businesses to meet their online needs by building websites, managing Google listings, tracking website traffic, managing hosting and DNS, etc.
 
         View my full portfolio at [ssweb.services/portfolio](https://ssweb.services/portfolio)
 
