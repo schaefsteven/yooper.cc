@@ -20,6 +20,8 @@ skills:
   - JavaScript
   - Python
   - Bash / ZSH
+  - Windows
+  - MacOS
   - Linux
   - NPM
   - Git / Github
@@ -31,15 +33,15 @@ skills:
 
 technicalExperience:
   - title: 3D Modeling and Animation
-    description: I have created several 3D projects for animations, renders, and 3D printing.
+    description: Created several 3D projects for animations, renders, and 3D printing.
   - title: Video Production
-    description: I have produced several video projects, including pre-production and storyboarding, shooting, editing, and adding motion graphics.
+    description: Produced several video projects, including pre-production and storyboarding, shooting, editing, and adding motion graphics.
   - title: Audio Production
-    description: I have produced several audio projects, including multiple music albums, voice-over, foley, and sfx.
+    description: Produced several audio projects, including multiple music albums, voice-over, foley, and sfx.
   - title: Software Integration
-    description: I am skilled at integrating multiple softwares together. This includes scripting inside of an application, creating unified workflows with external scripting tools such as PowerShell and Bash, and using web APIs to connect local and remote resources to one another. I am familiar with Windows, MacOS, and Linux.
+    description: Experience with integrating multiple softwares together. This includes scripting inside of applications, creating unified workflows with external scripting tools such as PowerShell and Bash, and using web APIs to connect local and remote resources to one another.
   - title: Software Development
-    description: I have developed several applications and websites utilizing many different technologies. See below.
+    description: Developed several applications and websites utilizing many different technologies. See below.
 
 experience: 
 
@@ -47,12 +49,12 @@ experience:
     company: SS Web Services
     date: Jun 2022 - Present 
     description: |
-        I work with businesses to meet their online needs by building websites, managing google listings, tracking website traffic, managing hosting and DNS, etc.
+        Work with businesses to meet their online needs by building websites, managing google listings, tracking website traffic, managing hosting and DNS, etc.
         ### **Recent Projects:**
-        * **Rocky Hutchins Website** - I created a unique design from scratch for this site and implemented lots of useful features and functionality into the site such as web scraping, automatic contact cards, link forwarding, analytics, a CMS, and more. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, Decap CMS, NPM, PurgeCSS, Netlify, Cloudflare*
-        * **SS Web Services Website** - This site was created to help showcase the work of SS Web Services and reach new clients. It’s designed to be performant and easy to maintain. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, NPM, Netlify*
+        * **Rocky Hutchins Website** - Created a site with an original design and implemented several useful features such as web scraping, automatic contact cards, link forwarding, analytics, a CMS, and more. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, Decap CMS, NPM, PurgeCSS, Netlify, Cloudflare*
+        * **SS Web Services Website** - Created a performant and easy-to-maintain site to showcase the work of SS Web Services and reach new clients. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, NPM, Netlify*
         
-          View my full portfolio at [ssweb.services/portfolio](https://ssweb.services/portfolio)
+          View my portfolio at [ssweb.services/portfolio](https://ssweb.services/portfolio)
 
   - title: Sales Engineer
     company: Sweetwater Sound
