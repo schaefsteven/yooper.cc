@@ -37,7 +37,7 @@ technicalExperience:
   - title: Video Production
     description: Produced several video projects, including pre-production and storyboarding, shooting, editing, and adding motion graphics.
   - title: Audio Production
-    description: Produced several audio projects, including multiple music albums, voice-over, foley, and sfx.
+    description: Produced several audio projects, including multiple music albums, voice-over, foley, and SFX.
   - title: Software Integration
     description: Experience with integrating multiple softwares together. This includes scripting inside of applications, creating unified workflows with external scripting tools such as PowerShell and Bash, and using web APIs to connect local and remote resources to one another.
   - title: Software Development
@@ -49,7 +49,7 @@ experience:
     company: SS Web Services
     date: Jun 2022 - Present 
     description: |
-        Work with businesses to meet their online needs by building websites, managing google listings, tracking website traffic, managing hosting and DNS, etc.
+        Work with businesses to meet their online needs by building websites, managing Google listings, tracking website traffic, managing hosting and DNS, etc.
         ### **Recent Projects:**
         * **Rocky Hutchins Website** - Created a site with an original design and implemented several useful features such as web scraping, automatic contact cards, link forwarding, analytics, a CMS, and more. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, Decap CMS, NPM, PurgeCSS, Netlify, Cloudflare*
         * **SS Web Services Website** - Created a performant and easy-to-maintain site to showcase the work of SS Web Services and reach new clients. **Technologies used:** *Hugo, Bootstrap, HTML, SCSS, NPM, Netlify*
