@@ -8,8 +8,10 @@
         </div>
         <div class="row">
             <div class="col-9 left-column">
-                <h2>Summary</h2>
-                    <p>{{ .Params.summary }}</p>
+                {{ with .Params.summary }}
+                    <h2>Summary</h2>
+                        <p>{{ . }}</p>
+                {{ end }}
                 <h2>Technical Experience</h2>
                 <ul class="technical-experience experience">
                     {{ range .Params.Technicalexperience }}
